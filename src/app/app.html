@@ -14,18 +14,18 @@
 
     <button menuClose class="menu-item" ion-item (click)="home()">
       <ion-icon name="home" item-left></ion-icon>
-      {{'Home' | translate}}
+      {{'Inicio' | translate}}
     </button>
+    <!--<button menuClose class="menu-item" ion-item (click)="addToCart()">
     <button menuClose class="menu-item" ion-item (click)="catagory()">
       <ion-icon name="apps" item-left></ion-icon>
-      {{'Category'| translate}}
+      {{'Destinos'| translate}}
     </button>
     <button *ngIf="isCart()" menuClose class="menu-item" ion-item (click)="offer()">
       <ion-icon name="pricetag" item-left></ion-icon>
-      {{'Offers'| translate}}
+      {{'Ofertas'| translate}}
       <ion-badge class="menu-badge">{{noOfItemsInOffer}}</ion-badge>
     </button>
-    <button menuClose class="menu-item" ion-item (click)="addToCart()">
       <ion-icon name="cart" item-left></ion-icon>
       {{'MyCart'| translate}}
       <ion-badge class="menu-badge">{{noOfItemsInCart}}</ion-badge>
@@ -40,30 +40,32 @@
     </button>
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="bookingHistory()">
       <ion-icon name="options" item-left></ion-icon>
-      <!-- <ion-badge class="menu-badge">4</ion-badge> -->
+      <ion-badge class="menu-badge">4</ion-badge> 
       {{'Booking History' | translate}}
     </button>
+    -->
     <button menuClose class="menu-item" ion-item (click)="news()">
       <ion-icon name="paper" item-left></ion-icon>
-      {{'News'| translate}}
+      {{'Proximos viajes'| translate}}
       <ion-badge class="menu-badge">{{noOfItemsInNews}}</ion-badge>
     </button>
+    <!--
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="favourite()">
       <ion-icon name="heart" item-left></ion-icon>
       {{'Favourite'| translate}}
-      <!-- <ion-badge class="menu-badge">{{noOfItemsInFevrt}}</ion-badge> -->
-    </button>
+      <ion-badge class="menu-badge">{{noOfItemsInFevrt}}</ion-badge> 
+    </button>-->
     <button menuClose class="menu-item" ion-item (click)="contact()">
       <ion-icon name="call" item-left></ion-icon>
-      {{'Contact'| translate}}
+      {{'Contactanos'| translate}}
     </button>
     <button menuClose class="menu-item" ion-item (click)="aboutUs()">
       <ion-icon name="contacts" item-left></ion-icon>
-      {{'About Us'| translate}}
+      {{'Sobre Nostros'| translate}}
     </button>
     <button menuClose class="menu-item" ion-item *ngIf="isLoggedin()" (click)="invite()">
       <ion-icon name="contacts" item-left></ion-icon>
-      {{'Invite Frieds' | translate}}
+      {{'Inivita amigos' | translate}}
     </button>
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="chat()">
       <ion-icon name="chatbubbles" item-left></ion-icon>
@@ -71,7 +73,7 @@
     </button>
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="settings()">
       <ion-icon name="settings" item-left></ion-icon>
-      {{'Settings'| translate}}
+      {{'Configuracion'| translate}}
     </button>
     <button *ngIf="!isLoggedin()" menuClose class="menu-item" ion-item (click)="login()">
       <ion-icon name="log-in" item-left></ion-icon>
@@ -100,15 +102,16 @@
 
     <button menuClose class="menu-item" ion-item (click)="home()">
       <ion-icon name="home" item-left></ion-icon>
-      {{'Home' | translate}}
+      {{'Inicio' | translate}}
     </button>
+    <!--
     <button menuClose class="menu-item" ion-item (click)="catagory()">
       <ion-icon name="apps" item-left></ion-icon>
-      {{'Category'| translate}}
+      {{'Destinos'| translate}}
     </button>
     <button *ngIf="isCart()" menuClose class="menu-item" ion-item (click)="offer()">
       <ion-icon name="pricetag" item-left></ion-icon>
-      {{'Offers'| translate}}
+      {{'Ofertas'| translate}}
       <ion-badge class="menu-badge">{{noOfItemsInOffer}}</ion-badge>
     </button>
     <button menuClose class="menu-item" ion-item (click)="addToCart()">
@@ -126,30 +129,33 @@
     </button>
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="bookingHistory()">
       <ion-icon name="options" item-left></ion-icon>
-      <!-- <ion-badge class="menu-badge">4</ion-badge> -->
+       <ion-badge class="menu-badge">4</ion-badge> 
       {{'Booking History' | translate}}
     </button>
+  -->
     <button menuClose class="menu-item" ion-item (click)="news()">
       <ion-icon name="paper" item-left></ion-icon>
-      {{'News'| translate}}
+      {{'Proximos viajes'| translate}}
       <ion-badge class="menu-badge">{{noOfItemsInNews}}</ion-badge>
     </button>
+    <!--
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="favourite()">
       <ion-icon name="heart" item-left></ion-icon>
       {{'Favourite'| translate}}
-      <!-- <ion-badge class="menu-badge">{{noOfItemsInFevrt}}</ion-badge> -->
+      <ion-badge class="menu-badge">{{noOfItemsInFevrt}}</ion-badge> 
     </button>
+      -->
     <button menuClose class="menu-item" ion-item (click)="contact()">
       <ion-icon name="call" item-left></ion-icon>
-      {{'Contact'| translate}}
+      {{'Contactanos'| translate}}
     </button>
     <button menuClose class="menu-item" ion-item (click)="aboutUs()">
       <ion-icon name="contacts" item-left></ion-icon>
-      {{'About Us'| translate}}
+      {{'Sobre nosotros'| translate}}
     </button>
     <button menuClose class="menu-item" ion-item *ngIf="isLoggedin()" (click)="invite()">
       <ion-icon name="contacts" item-left></ion-icon>
-      {{'Invite Frieds' | translate}}
+      {{'Invita Amigos' | translate}}
     </button>
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="chat()">
       <ion-icon name="chatbubbles" item-left></ion-icon>
@@ -157,7 +163,7 @@
     </button>
     <button *ngIf="isLoggedin()" menuClose class="menu-item" ion-item (click)="settings()">
       <ion-icon name="settings" item-left></ion-icon>
-      {{'Settings'| translate}}
+      {{'Configuracion'| translate}}
     </button>
     <button *ngIf="!isLoggedin()" menuClose class="menu-item" ion-item (click)="login()">
       <ion-icon name="log-in" item-left></ion-icon>

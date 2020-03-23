@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>{{"News" | translate}}</ion-title>
+        <ion-title>{{"Proximos viajes" | translate}}</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -19,7 +19,7 @@
                     <img src="{{news.thumb}}">
                 </ion-thumbnail>
                 <h2>{{news.title}}:- </h2>
-                <p>{{news.description | limitPipe:50}}</p>
+                <p>{{news.shortDescription | limitPipe:50}}</p>
             </ion-item>
         </ion-list>
     </div>

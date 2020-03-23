@@ -34,7 +34,7 @@ export class HomePage {
     });
     loader.present().then(() => {
       this.comingData = af.list("/coming");
-      this.categories = af.list("/categories");
+      this.categories = af.list("/news");
       this.comingData.valueChanges().subscribe(data => {
         this.ComingData = data;
       });
@@ -76,7 +76,7 @@ export class HomePage {
 
   navigate(id) {
     console.log(id)
-    this.navCtrl.push("ProductListPage", { id: id });
+    this.navCtrl.push("NewsDetailPage", { id: id });
   }
 
   navcart() {

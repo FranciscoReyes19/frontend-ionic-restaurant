@@ -14,7 +14,7 @@ import { EmailComposer } from "@ionic-native/email-composer";
 export class AboutUsPage {
   @ViewChild(Slides) slides: Slides;
   @ViewChild(Nav) nav: Nav;
-  contactNo: any = 7376421282;
+  contactNo: any = 2721429040;
 
   constructor(
     public platform: Platform,

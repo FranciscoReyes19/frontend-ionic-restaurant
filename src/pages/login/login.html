@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content class="login">
-    <img class="logo" src="assets/img/logo-icon.png">
+    <img class="logo" src="assets/img/profile.jpg">
 
     <!--inputs-->
     <!--email-->
@@ -16,7 +16,7 @@
         <ion-row>
             <ion-col col-12>
                 <ion-item>
-                    <ion-label>{{"Email:" | translate}}</ion-label>
+                    <ion-label>{{"Correo:" | translate}}</ion-label>
                     <ion-input class="form-control" id="exampleInputEmail1" type="email" name="email" placeholder="Enter email"
                         autocomplete="off" formControlName="email" required></ion-input>
                 </ion-item>
@@ -26,7 +26,7 @@
         <ion-row>
             <ion-col col-12>
                 <ion-item>
-                    <ion-label>{{"Password:" | translate}}</ion-label>
+                    <ion-label>{{"Contraseña:" | translate}}</ion-label>
                     <ion-input id="exampleInputPassword1" type="password" name="password" placeholder="Password"
                         formControlName="password" required=""></ion-input>
                 </ion-item>
@@ -36,13 +36,13 @@
         <!--forget-->
         <ion-row>
             <ion-col col-12 (click)="onClickForgotPassword()">
-                <p text-center>{{"FORGOT PASSWORD ?" | translate}}</p>
+                <p text-center>{{"CONTRASEÑA OLVIDADA ?" | translate}}</p>
             </ion-col>
         </ion-row>
         <!--button-->
         <ion-row>
             <ion-col col-12>
-                <button class="login-btn" type="submit" [disabled]="!valForm.valid" ion-button>{{"Login" | translate}}
+                <button class="login-btn" type="submit" [disabled]="!valForm.valid" ion-button>{{"Ingresar" | translate}}
                 </button>
             </ion-col>
         </ion-row>
@@ -51,7 +51,7 @@
     <!--login with-->
     <ion-row>
         <ion-col col-12>
-            <p text-center>{{"LOGIN WITH" | translate}}</p>
+            <p text-center>{{"INGRESAR CON" | translate}}</p>
         </ion-col>
     </ion-row>
 
@@ -74,7 +74,7 @@
     <ion-row>
         <ion-col col-12>
             <a (click)="Register()">
-                <p text-center>{{"REGISTER NOW !" | translate}}</p>
+                <p text-center>{{"REGISTRATE AQUI !" | translate}}</p>
             </a>
         </ion-col>
     </ion-row>
