@@ -21,8 +21,10 @@ export class HomePage {
 
   public ComingData: Array<any> = [];
   public Categories: Array<any> = [];
+  public Categories2: Array<any> = [];
   comingData: AngularFireList<any>;
   categories: AngularFireList<any>;
+  categories2: AngularFireList<any>;
 
   constructor(
     public navCtrl: NavController,
@@ -35,6 +37,7 @@ export class HomePage {
     loader.present().then(() => {
       this.comingData = af.list("/coming");
       this.categories = af.list("/news");
+      this.categories2 = af.list("/news2");
       this.comingData.valueChanges().subscribe(data => {
         this.ComingData = data;
       });
@@ -47,6 +50,17 @@ export class HomePage {
           this.Categories = data;
           console.log(this.Categories);
           loader.dismiss();
+        })
+
+        this.categories2.snapshotChanges()
+        .pipe(
+          map(changes =>
+            changes.map(c => ({ $key: c.payload.key, ...c.payload.val() }))
+          )
+        ).subscribe((data: any) => {
+          this.Categories2 = data;
+          console.log(this.Categories2);
+          //loader.dismiss();
         })
 
       // .subscribe(data => {
@@ -77,6 +91,11 @@ export class HomePage {
   navigate(id) {
     console.log(id)
     this.navCtrl.push("NewsDetailPage", { id: id });
+  }
+
+  navigate2(id) {
+    console.log(id)
+    this.navCtrl.push("NewsDetailRealizados", { id: id });
   }
 
   navcart() {

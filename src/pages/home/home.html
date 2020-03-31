@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title class="title">{{"Kuira Travels" | translate}}
+    <ion-title class="title">{{"Ohana Travels" | translate}}
     </ion-title>
     <ion-buttons end>
       <!--FRT BUTTON CART DISABLED-->
@@ -40,5 +40,15 @@
         <p class="text-over-img">{{item.title}}</p>
       </ion-col>
     </ion-row>
+
+    <h2 text-center>{{"Viajes Realizados" | translate}}</h2>
+
+    <ion-row class="categories">
+      <ion-col col-6 *ngFor="let item of Categories2" (click)="navigate2(item.$key)">
+        <img src="{{item.thumb}}" />
+        <p class="text-over-img">{{item.title}}</p>
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
 </ion-content>

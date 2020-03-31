@@ -47,6 +47,9 @@
             <ion-icon name="arrow-dropdown"></ion-icon>
         </h4>
         <ion-card>
+            <ion-card-content (click)="whatsapp()">
+                <ion-icon name="call"></ion-icon> &nbsp; {{"Whatsapp" | translate}}
+            </ion-card-content>
             <ion-card-content (click)="callUs()">
                 <ion-icon name="call"></ion-icon> &nbsp; {{"Al telefono" | translate}}
             </ion-card-content>

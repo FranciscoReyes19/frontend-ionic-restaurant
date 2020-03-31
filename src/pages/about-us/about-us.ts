@@ -38,6 +38,9 @@ export class AboutUsPage {
   gotogoogleMap() {
     this.navCtrl.push("LocationPage");
   }
+  whatsapp(){
+    window.open('https://api.whatsapp.com/send?phone=522721326148');
+  }
 
   contact() {
     let email = {
