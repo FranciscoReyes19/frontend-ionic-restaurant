@@ -14,7 +14,7 @@ import { EmailComposer } from "@ionic-native/email-composer";
 export class AboutUsPage {
   @ViewChild(Slides) slides: Slides;
   @ViewChild(Nav) nav: Nav;
-  contactNo: any = 2721429040;
+  contactNo: any = 2721708281;
 
   constructor(
     public platform: Platform,
@@ -39,13 +39,13 @@ export class AboutUsPage {
     this.navCtrl.push("LocationPage");
   }
   whatsapp(){
-    window.open('https://api.whatsapp.com/send?phone=522721326148');
+    window.open('https://api.whatsapp.com/send?phone=522721708281');
   }
 
   contact() {
     let email = {
       // You can change This Email to your own Email to receive contact Email.
-      to: "ionicfirebaseapp@gmail.com",
+      to: "ohanatoursorizaba@gmail.com",
       isHtml: true
     };
     this.emailComposer.open(email);

@@ -1,7 +1,4 @@
 page-realizados {
-  ion-card img {
-    height: 330px;
-  }
   .card {
     margin: 0px;
     width: 100%;
@@ -16,5 +13,23 @@ page-realizados {
     padding: 0 17px;
     font-size: 10px;
     color: $grey;
+  }
+  .grid {
+    padding: 0px;
+    .slides {
+      .overlay {
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        );
+        display: inline-flex;
+      }
+      .slider-img {
+        height: 260px;
+        width: 100%;
+        position: relative;
+        z-index: -111;
+      }
+    }
   }
 }

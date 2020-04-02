@@ -33,7 +33,7 @@ export class ContactPage {
         });
     }
     let email = {
-      to: "san10694@gmail.com",
+      to: "ohanatoursorizaba@gmail.com",
       subject: this.user.name,
       body: this.user.message,
       isHtml: true

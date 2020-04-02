@@ -7,9 +7,9 @@ import { IonicPage, NavController, NavParams } from "ionic-angular";
   templateUrl: "location.html"
 })
 export class LocationPage {
-  title: string = "My location ";
-  lat: number = 12.918844;
-  lng: number = 77.610877;
+  title: string = "Ubicacion ";
+  lat: number = 18.846174;
+  lng: number = -97.103276;
   zoom: number = 12;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
