@@ -41,10 +41,10 @@ export class LoginPage {
   ) {
     this.valForm = fb.group({
       email: [
-        "ionicfirebaseapp@gmail.com",
+        "",
         Validators.compose([Validators.required, CustomValidators.email])
       ],
-      password: ["123456", Validators.required]
+      password: ["", Validators.required]
     });
   }
 

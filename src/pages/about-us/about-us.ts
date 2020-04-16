@@ -15,6 +15,7 @@ export class AboutUsPage {
   @ViewChild(Slides) slides: Slides;
   @ViewChild(Nav) nav: Nav;
   contactNo: any = 2721708281;
+  whatsappUrl: any = "https://api.whatsapp.com/send?phone=522721708281";
 
   constructor(
     public platform: Platform,
@@ -39,7 +40,8 @@ export class AboutUsPage {
     this.navCtrl.push("LocationPage");
   }
   whatsapp(){
-    window.open('https://api.whatsapp.com/send?phone=522721708281');
+    //location.href = this.whatsappNo;
+    window.open(this.whatsappUrl,"_system","location=yes");
   }
 
   contact() {

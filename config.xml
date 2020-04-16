@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionicframework.ionicfirebaseapprestaurant" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Ohana</name>
-    <description>Ohana</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <description>Ohana Tours</description>
+    <author email="francisco.reyesfrt@outlook.com" href="#">Francisco Reyes Tlaxcala</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
     <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
