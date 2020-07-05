@@ -14,8 +14,8 @@ import { EmailComposer } from "@ionic-native/email-composer";
 export class AboutUsPage {
   @ViewChild(Slides) slides: Slides;
   @ViewChild(Nav) nav: Nav;
-  contactNo: any = 2721708281;
-  whatsappUrl: any = "https://api.whatsapp.com/send?phone=522721708281";
+  contactNo: any = 2721357072;
+  whatsappUrl: any = "https://api.whatsapp.com/send?phone=522721357072";
 
   constructor(
     public platform: Platform,
